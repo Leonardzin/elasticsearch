@@ -57,7 +57,7 @@ public abstract class CustomAnalyzerWrapper extends Analyzer {
 
     @Override
     protected final TokenStreamComponents createComponents(String fieldName, Reader aReader) {
-        System.out.println("Test");
+        System.out.println("New development!");
         return wrapComponents(fieldName, getWrappedAnalyzer(fieldName).createComponents(fieldName, aReader));
     }
 
