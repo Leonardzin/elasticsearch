@@ -62,11 +62,13 @@ public abstract class CustomAnalyzerWrapper extends Analyzer {
 
     @Override
     public int getPositionIncrementGap(String fieldName) {
+        System.out.println("Test@!");
         return getWrappedAnalyzer(fieldName).getPositionIncrementGap(fieldName);
     }
 
     @Override
     public int getOffsetGap(String fieldName) {
+        System.out.println("Test!");
         return getWrappedAnalyzer(fieldName).getOffsetGap(fieldName);
     }
 
