@@ -69,7 +69,7 @@ public abstract class CustomAnalyzerWrapper extends Analyzer {
 
     @Override
     public int getOffsetGap(String fieldName) {
-        System.out.println("Test Branch!");
+        System.out.println("Second copy of main!");
         return getWrappedAnalyzer(fieldName).getOffsetGap(fieldName);
     }
 
