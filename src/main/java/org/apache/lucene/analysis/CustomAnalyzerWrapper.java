@@ -74,7 +74,7 @@ public abstract class CustomAnalyzerWrapper extends Analyzer {
 
     @Override
     public final Reader initReader(String fieldName, Reader reader) {
-        System.out.println("Test branch klsdfkaa!");
+        System.out.println("Test branch");
         return getWrappedAnalyzer(fieldName).initReader(fieldName, reader);
     }
 }
