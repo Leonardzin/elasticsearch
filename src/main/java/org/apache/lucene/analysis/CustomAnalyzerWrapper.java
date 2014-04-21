@@ -78,4 +78,8 @@ public abstract class CustomAnalyzerWrapper extends Analyzer {
         System.out.println("Test branch ttttt");
         return getWrappedAnalyzer(fieldName).initReader(fieldName, reader);
     }
+
+    public void test() {
+
+    }
 }
